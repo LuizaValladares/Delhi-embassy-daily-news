@@ -69,8 +69,8 @@ jobs:
           # Camada de IA opcional. Sem a secret, o build usa só o ranking
           # heurístico (fallback automático).
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-3.6-flash
-          GEMINI_MODEL_NARRATIVES: gemini-3.6-flash
+          GEMINI_MODEL: gemini-2.5-flash,
+          GEMINI_MODEL_NARRATIVES: gemini-2.5-flash
           # Narrativas: sem override, o build escolhe automaticamente o melhor
           # modelo Pro disponível na conta (consulta a lista de modelos da API)
           # Opcional (APIs pagas): com UMA destas secrets, as Narrativas usam
